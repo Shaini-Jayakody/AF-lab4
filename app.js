@@ -1,7 +1,6 @@
-console.log("Lab 04 - NodeJS Setup Successful");
 const fs = require('fs');
 
-fs.readFile('file.txt', 'utf8', function (err, data) {
+fs.writeFile('file.txt', 'Hello World!', function (err) {
   if (err) throw err;
-  console.log(data);
+  console.log('File saved!');
 });
